@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hubballi", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f4dec9;
+}
+
+h1 {
+  font-family: "The Rainmaker";
+  font-size: 95px;
+  color: #fffcf3;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: #3d1900;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 20px 10px 20px 10px;
+  padding: 0 10px 0 10px;
+}
+
+p {
+  font-family: "Neue Montreal", sans-serif;
+  color: #3d1900;
+  font-size: 20px;
+  text-align: right;
+  line-height: 150%;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+
+.hero {
+  background-image: url(/fars_dreng/img/mobile_virk_result.webp);
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f4dec9;
+}
+
+.velkommen {
+  gap: 0;
+  margin: 0;
+  background-color: #f4dec9;
+}
+
+/* DESKTOP */
+@media (min-width: 1300px) {
+}
+
+/* FONTE */
+
+@font-face {
+  font-family: "The Rainmaker";
+  src: url(/fars_dreng/fonts/The-Rainmaker.ttf);
+  font-weight: 800;
+}

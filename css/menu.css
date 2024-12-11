@@ -5,6 +5,14 @@ body {
 h1 {
   font-family: "DM Serif Display", serif;
   font-style: italic;
+  font-weight: lighter;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+body {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 /* grid for menukortet */
@@ -26,12 +34,44 @@ h1 {
 
 dt {
   font-weight: 700;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  body {
+    max-width: 670px;
+    margin: 0 auto;
+  }
+  .menukort {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* computersite */
-@media (min-width: 800px) {
+@media (min-width: 1300px) {
   .menukort {
     display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 64px;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  background-color: #a08d17;
+}
+header {
+  background-color: #a08d17;
 }

@@ -1,0 +1,38 @@
+/* general css? */
+body {
+  background-color: #f4dec9;
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+main {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.eksempler {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  color: white;
+}
+
+.orange_box {
+  background-color: #ff6c39;
+  padding: 10px;
+}
+
+#box1 {
+  grid-column: 1/5;
+}
+#box2 {
+  grid-column: 2/7;
+}
+#box3 {
+  grid-column: 1/6;
+}

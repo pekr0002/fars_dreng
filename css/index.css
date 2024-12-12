@@ -45,6 +45,19 @@ h3 {
   text-align: right;
 }
 
+.vores_menu {
+  margin: 0px 0 20px 90px;
+  padding: 0px 5px 5px 5px;
+}
+
+.orange_box {
+  color: #fffcf3;
+  background-color: #ff6c39;
+  margin: 20px 0 20px 90px;
+  padding: 5px 5px 20px 5px;
+  text-align: right;
+}
+
 p {
   font-family: "Neue Montreal", sans-serif;
   color: #3d1900;

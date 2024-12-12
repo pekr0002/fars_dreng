@@ -1,18 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* general css? */
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background-color: #f4dec9;
 }
 h2 {
   font-family: "DM Serif Display", serif;
+  color: #3d1900;
   font-style: italic;
   font-weight: lighter;
-  font-size: 40px;
+  font-size: 48px;
   text-transform: uppercase;
+  text-align: right;
+  padding: 0 10px 10px 10px;
+}
+h3 {
+  font-family: "Neue Montreal", sans-serif;
+  color: #3d1900;
+  font-size: 32px;
+  text-align: left;
+  line-height: 150%;
+  margin: 50px 10px 0 5px;
+  padding: 0 10px 0 5px;
 }
 
-main {
-  max-width: 400px;
-  margin: 0 auto;
+.h3_eksempler {
+  font-family: "Neue Montreal", sans-serif;
+  color: #3d1900;
+  font-size: 32px;
+  text-align: left;
+  line-height: 150%;
+  margin: 50px 10px 0 5px;
+  padding: 0 10px 0 10px;
+}
+
+p {
+  font-family: "Neue Montreal", sans-serif;
+  color: #3d1900;
+  font-size: 20px;
+  text-align: right;
+  line-height: 150%;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+
+.i_box {
+  color: #fffcf3;
+  margin: 5px 0 50px;
+}
+
+label {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  font-style: lighter;
+  color: #3d1900;
+  margin: 5px 10px 0 5px;
+  padding: 0 10px 0 5px;
+}
+
+input,
+textarea {
+  font-family: "Neue Montreal", sans-serif;
+  color: #3d1900;
+  font-size: 16px;
 }
 
 img {
@@ -26,15 +83,18 @@ img {
 .eksempler {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 40px;
   color: white;
   margin: 10px 0px 10px 0px;
 }
 
 .orange_box {
   background-color: #ff6c39;
-  padding: 5px 5px 35px 5px;
+  padding: 5px 5px 50px 5px;
   text-align: right;
+  margin-top: 20px;
+  position: relative;
+  box-shadow: 10px -10px 0 #7a600e;
 }
 
 #box1 {
@@ -54,7 +114,16 @@ img {
 }
 
 .textfelt {
-  width: 100%;
+  margin: 10px 10px 10px 5px;
+  padding: 10px 10px 30px 5px;
+  background-color: #fffcf3;
+  border-width: 3px;
+  border-color: #7a600e;
+}
+
+#email,
+#metode {
+  padding: 10px 100px 30px 5px;
 }
 
 .grid_1 {
@@ -63,6 +132,7 @@ img {
 }
 
 button {
+  font-family: "Neue Montreal", sans-serif;
   background-color: #ff6c39;
   padding: 10px;
   border: none;
@@ -71,9 +141,12 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  box-shadow: 10px -10px 0 #7a600e;
 }
 
 .flex_end {
@@ -87,9 +160,6 @@ img {
   display: block;
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: 20px;
-  position: relative;
-  box-shadow: 10px -10px 0 #3d1900;
 }
 
 input {

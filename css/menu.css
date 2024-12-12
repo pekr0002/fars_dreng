@@ -2,7 +2,7 @@
 body {
   background-color: #f4dec9;
 }
-h1 {
+h2 {
   font-family: "DM Serif Display", serif;
   font-style: italic;
   font-weight: lighter;
@@ -13,6 +13,14 @@ h1 {
 main {
   max-width: 400px;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* grid for menukortet */

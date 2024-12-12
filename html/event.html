@@ -16,22 +16,75 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.webp" />
     <link rel="manifest" href="/favicon_io/site.webmanifest" />
 
-    <title>Event</title>
+    <title>Events</title>
   </head>
   <body>
     <header></header>
     <main>
-      <h1>Events</h1>
-      <p>Fars Dreng elsker fest og godt selskab. Derfor åbner han gerne for booking af vores restauranter om aftenen, hvor du kan få det hele for dig selv. Har du en særlig begivenhed eller event, som du vil fejre i vores omgivelser, står køkkenet og personalet klar til at give dig en glad aften. Fortæl hvad du kunne tænke dig af mad og drikke. Så finder vi en løsning, der passer til både ønsker og budget.</p>
-      <h2>Eksempler</h2>
-      <div class="eksempler">
-        <div class="orange_box" id="box1"><p>Stående reception med mad og drikke. 350 DKK per gæst. Minimum 40 gæster.</p></div>
-        <div class="orange_box" id="box2"><p>“Food sharing”-begivenhed med vin, øl og ikke-alkoholiske drikkevarer. 600 DKK per gæst. Minimum 20 gæster.</p></div>
-        <div class="orange_box" id="box3"><p>Kaffeknallert Har du en udendørs event, hvor god kaffe er et must, så starter Fars Dreng den mobile barista. Vi serverer friskbrygget kaffe af friskkværnede bønner – med eller uden mælk, sukker og hvad der ellers hører til. Vi har det hele.</p></div>
-      </div>
-      <!-- inputfelter -->
+      <h2>Events</h2>
+      <div class="information">
+        <div>
+          <p>Fars Dreng elsker fest og godt selskab. Derfor åbner han gerne for booking af vores restauranter om aftenen, hvor du kan få det hele for dig selv. Har du en særlig begivenhed eller event, som du vil fejre i vores omgivelser, står køkkenet og personalet klar til at give dig en glad aften. Fortæl hvad du kunne tænke dig af mad og drikke. Så finder vi en løsning, der passer til både ønsker og budget.</p>
+          <!-- </div>
+    
+        <div> -->
+          <h3>Eksempler</h3>
+          <div class="eksempler">
+            <div class="orange_box" id="box1"><p>Stående reception med mad og drikke. 350 DKK per gæst. Minimum 40 gæster.</p></div>
+            <div class="orange_box" id="box2"><p>“Food sharing”-begivenhed med vin, øl og ikke-alkoholiske drikkevarer. 600 DKK per gæst. Minimum 20 gæster.</p></div>
+            <div class="orange_box" id="box3"><p>Kaffeknallert Har du en udendørs event, hvor god kaffe er et must, så starter Fars Dreng den mobile barista. Vi serverer friskbrygget kaffe af friskkværnede bønner – med eller uden mælk, sukker og hvad der ellers hører til. Vi har det hele.</p></div>
+          </div>
+        </div>
 
-      <!-- billede -->
+        <!-- inputfelter -->
+        <form>
+          <h3>Navn</h3>
+          <div class="grid_1-1">
+            <div class="input">
+              <input class="textfelt" type="text" id="fname" placeholder="Tilføj fornavn" />
+              <label for="fname">Fornavn</label>
+            </div>
+            <div class="input">
+              <input class="textfelt" type="text" id="lname" placeholder="Tilføj efternavn" />
+              <label for="lname">Fornavn</label>
+            </div>
+          </div>
+          <div class="input">
+            <h3>E-mailadresse</h3>
+            <input class="textfelt" type="email" placeholder="Tilføj E-mail" />
+          </div>
+          <div class="grid_1 input">
+            <h3>Vælg sted</h3>
+            <div>
+              <input type="radio" id="ny-adelsgade" />
+              <label for="ny-adelsgade">Booking Ny Adelsgade</label>
+            </div>
+            <div>
+              <input type="radio" id="rosengaarden" />
+              <label for="rosengaarden">Booking Rosengården</label>
+            </div>
+            <div>
+              <input type="radio" id="kaffeknallert" />
+              <label for="kaffeknallert">Booking Kaffeknallert</label>
+            </div>
+          </div>
+          <div class="input">
+            <h3>Tilføj besked</h3>
+            <textarea class="textfelt" id="metode" placeholder="Tilføj besked"></textarea>
+          </div>
+          <div class="input">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+          </div>
+          <div>
+            <div class="flex_end">
+              <button type="button">Send besked</button>
+            </div>
+          </div>
+        </form>
+        <!-- billede -->
+        <img src="/img/Kaffevogn.webp" alt="Billede af kaffeknallert" id="kaffevogn" />
+      </div>
     </main>
     <footer></footer>
   </body>

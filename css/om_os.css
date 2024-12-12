@@ -1,0 +1,275 @@
+/* general css? */
+body {
+  background-color: #f4dec9;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+dl {
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* computersite */
+@media (min-width: 1300px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.orange_box {
+  background-color: #ff6c39;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.brown_box {
+  background-color: #3d1900;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cyclig_cancer {
+  margin-top: 10px;
+}
+
+.legeheltene {
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ----------------------------------- Header ----------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #a08d17;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: auto;
+  width: 30%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  font-family: "Neue Montreal", sans-serif;
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #f4dec9;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: rgba(122, 96, 14, 0.8);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/* -----------------------------------Header slut----------------------------- */
+
+/* -----------------------------------Footer----------------------------- */
+.footerindhold {
+  margin: 10px;
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.logo {
+  margin: 10px;
+  grid-column: 1/3;
+  scale: 80%;
+}
+footer {
+  background-color: #a08d17;
+  margin-top: 30px;
+  color: white;
+}
+footer ul {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: 20px 0px 20px 0px;
+}
+.link {
+  grid-column: 1/3;
+}
+footer dt {
+  font-weight: 400;
+  font-size: 15px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* computersite */
+@media (min-width: 1300px) {
+  .footerindhold {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 10px;
+  }
+  .logo {
+    height: auto;
+    width: 40%;
+    margin: 10px;
+  }
+  footer ul {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    scale: 100%;
+  }
+  .link {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+/* -----------------------------------Footer----------------------------- */

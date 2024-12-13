@@ -210,11 +210,3 @@ p {
     margin: 0px;
   }
 }
-
-/* FONTE */
-
-@font-face {
-  font-family: "The Rainmaker";
-  src: url(/fonts/The\ Rainmaker.woff);
-  font-weight: 800;
-}

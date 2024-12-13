@@ -5,10 +5,57 @@
   box-sizing: border-box;
 }
 img {
+  width: 100%;
+  height: auto;
+  display: block;
   padding-top: 0;
   padding-bottom: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  --primary: #a08d17;
+}
+
+.divider {
+  border-top: 1px solid var(--primary);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f4dec9;
+}
+
+h1 {
+  font-family: "The Rainmaker";
+  font-size: 95px;
+  font-weight: lighter;
+  color: #fffcf3;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: #3d1900;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 20px 10px 20px 0px;
+  padding: 0 10px 0 10px;
+}
+
+h3 {
+  font-family: "Neue Montreal", sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  color: var(--primary);
+}
+/* navbar */
 header {
   position: sticky;
   top: 0;

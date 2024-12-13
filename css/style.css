@@ -179,6 +179,8 @@ nav {
 }
 
 @font-face {
-  font-family: "Neue Montreal", sans-serif;
-  src: url(/fonts/neuemontreal-thin.woff);
+  font-family: "Neue Montreal";
+  src: url(/fonts/ppneuemontreal-book.woff);
+  font-style: normal;
+  font-weight: normal;
 }

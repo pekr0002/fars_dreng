@@ -42,7 +42,7 @@ h2 {
 
 h3 {
   font-family: "Neue Montreal", sans-serif;
-  font-weight: light;
+  font-weight: 200;
   font-size: 32px;
   color: #fffcf3;
   background-color: #ff6c39;
@@ -66,6 +66,7 @@ h3 {
 
 p {
   font-family: "Neue Montreal", sans-serif;
+  font-weight: 200;
   color: #3d1900;
   font-size: 20px;
   text-align: right;
@@ -168,6 +169,90 @@ p {
   align-items: center;
   margin: 20px 0 20px 0;
 }
+
+/* ----------------------------------- Header ----------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #a08d17;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  /* height: auto;
+  width: 30%; */
+  height: 130px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 50px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  font-family: "Neue Montreal", sans-serif;
+
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  color: #fffcf3;
+  text-decoration: none;
+  transition: color 0.3s;
+  transition: 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #ff6c39;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+#header_divider {
+  border-top: 1px solid #fffcf3;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  z-index: 101;
+  position: relative;
+}
+
+/* -----------------------------------Header slut----------------------------- */
 
 /* DESKTOP */
 

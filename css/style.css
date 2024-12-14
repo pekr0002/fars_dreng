@@ -71,9 +71,8 @@ header {
 }
 
 nav {
-  position: absolute;
-  top: 0; /* Placerer navigationen i toppen af headeren */
-  right: 0; /* Placerer navigationen til højre */
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -84,7 +83,7 @@ nav {
 }
 
 .menu li {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .menu li:last-child {
@@ -93,7 +92,7 @@ nav {
 
 .menu a {
   font-family: "Neue Montreal", sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   display: block;
   padding: 10px;
   color: #fffcf3;
@@ -105,13 +104,13 @@ nav {
 
 .menu a:hover {
   color: #ff6c39;
-  font-size: 27px;
+  font-size: 25px;
   transition: 0.3s;
 }
 
 .burger {
-  width: 30px;
-  height: 20px;
+  width: 40px;
+  height: 25px;
   cursor: pointer;
   margin: 10px;
   padding: 5px;
@@ -123,41 +122,39 @@ nav {
   height: 2px;
   background-color: #fffcf3;
   margin-bottom: 5px;
-  transition: 0.2s linear;
+  transition: 0.3s linear;
 }
 .burger {
   display: none;
 }
 @media screen and (max-width: 800px) {
   .menu {
+    flex-direction: column;
+    padding: 0px;
     display: none;
   }
   .burger {
     display: block;
   }
   .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
   }
 
   .burger.active .line:nth-child(2) {
-    opacity: 0;
     transition: 0.15s linear;
   }
 
   .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
 
   nav.active .menu {
     display: block;
-    background-color: #ffffff;
+    background-color: rgba(61, 25, 0, 0.65);
     position: absolute;
     top: 94px;
     left: 0;
     width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
@@ -166,7 +163,9 @@ nav {
   }
 
   nav.active .menu a {
-    font-size: 20px;
+    font-family: "Neue Montreal", sans-serif;
+    font-size: 45px;
+    padding-right: 0px;
   }
 }
 

@@ -19,18 +19,37 @@
     <title>Events</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="/img/Fars_dreng_logo.webp" alt="Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="om_os.html">OM OS</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="menu.html">TAKE-AWAY</a></li>
+          <li><a href="bestil.html">BOOK ET BORD</a></li>
+          <li><a href="event.html">EVENTS</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
     <main>
       <h2>Events</h2>
       <!--FLYT H2'EREN IND I GRIDDET SÅ DEN VIRKER PÅ DESKTOP :)-->
       <div class="divider"></div>
+      <p>Fars Dreng elsker fest og godt selskab. Derfor åbner han gerne for booking af vores restauranter om aftenen, hvor du kan få det hele for dig selv. Har du en særlig begivenhed eller event, som du vil fejre i vores omgivelser, står køkkenet og personalet klar til at give dig en glad aften. Fortæl hvad du kunne tænke dig af mad og drikke. Så finder vi en løsning, der passer til både ønsker og budget.</p>
+      <div class="divider"></div>
       <div class="information">
         <div>
-          <p>Fars Dreng elsker fest og godt selskab. Derfor åbner han gerne for booking af vores restauranter om aftenen, hvor du kan få det hele for dig selv. Har du en særlig begivenhed eller event, som du vil fejre i vores omgivelser, står køkkenet og personalet klar til at give dig en glad aften. Fortæl hvad du kunne tænke dig af mad og drikke. Så finder vi en løsning, der passer til både ønsker og budget.</p>
-          <!-- </div>
-    
-        <div> -->
-          <h3 class="h3_eksempler">Eksempler:</h3>
+          <h3>Eksempler:</h3>
           <div class="eksempler">
             <div class="orange_box" id="box1"><p class="i_box">Stående reception med mad og drikke. 350 DKK per gæst. Minimum 40 gæster.</p></div>
             <div class="orange_box" id="box2"><p class="i_box">“Food sharing”-begivenhed med vin, øl og ikke-alkoholiske drikkevarer. 600 DKK per gæst. Minimum 20 gæster.</p></div>
@@ -43,49 +62,50 @@
           <h3>Navn</h3>
           <div class="grid_1-1">
             <div class="input">
-              <input class="textfelt" type="text" id="fname" placeholder="Tilføj fornavn" />
+              <input class="textfelt" type="text" id="fname" placeholder="Tilføj fornavn" name="kontakt" />
               <label for="fname">Fornavn</label>
             </div>
             <div class="input">
-              <input class="textfelt" type="text" id="lname" placeholder="Tilføj efternavn" />
+              <input class="textfelt" type="text" id="lname" placeholder="Tilføj efternavn " name="kontakt" />
               <label for="lname">Efternavn</label>
             </div>
           </div>
           <div class="input">
             <h3>E-mailadresse</h3>
-            <input class="textfelt" id="metode" type="email" placeholder="Tilføj E-mail" />
+            <input class="textfelt" id="metode" type="email" placeholder="Tilføj E-mail" name="kontakt" />
           </div>
           <div class="grid_1 input">
             <h3>Vælg sted</h3>
             <div>
-              <input type="radio" id="ny-adelsgade" />
+              <input type="radio" id="ny-adelsgade" name="kontakt" />
               <label for="ny-adelsgade">Booking Ny Adelsgade</label>
             </div>
             <div>
-              <input type="radio" id="rosengaarden" />
+              <input type="radio" id="rosengaarden" name="kontakt" />
               <label for="rosengaarden">Booking Rosengården</label>
             </div>
             <div>
-              <input type="radio" id="kaffeknallert" />
+              <input type="radio" id="kaffeknallert" name="kontakt" />
               <label for="kaffeknallert">Booking Kaffeknallert</label>
             </div>
           </div>
           <div class="input">
             <h3>Tilføj besked</h3>
-            <textarea class="textfelt" id="metode" placeholder="Tilføj besked"></textarea>
+            <textarea class="textfelt" id="metode" placeholder="Tilføj besked" name="kontakt"></textarea>
           </div>
           <div class="input">
-            <input type="checkbox" id="checkbox" />
+            <input type="checkbox" id="checkbox" name="kontakt" />
             <label for="checkbox">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
           </div>
           <div>
             <div class="flex_end">
-              <button type="button">Send besked</button>
+              <button type="button" name="kontakt">Send besked</button>
             </div>
           </div>
         </form>
         <!-- billede -->
-        <img src="/img/Kaffevogn.webp" alt="Billede af kaffeknallert" id="kaffevogn" />
+        <div id="kaffevogn"></div>
+        <!-- <img src="/img/Kaffevogn.webp" alt="Billede af kaffeknallert" id="kaffevogn" /> -->
       </div>
     </main>
     <footer></footer>

@@ -1,43 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* general css? */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #f4dec9;
-}
-
-.divider {
-  border-top: 1px solid #a08d17;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-family: "DM Serif Display", serif;
-  color: #3d1900;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 48px;
-  text-transform: uppercase;
-  text-align: right;
-  padding: 0 10px 10px 10px;
-}
-h3 {
-  font-family: "Neue Montreal", sans-serif;
-  color: #3d1900;
-  font-size: 32px;
-  text-align: left;
-  line-height: 150%;
-  margin: 50px 10px 0 5px;
-  padding: 0 10px 0 5px;
-}
-
 .h3_eksempler {
   font-family: "Neue Montreal", sans-serif;
   color: #3d1900;
@@ -66,7 +26,6 @@ p {
 label {
   font-family: "DM Serif Display", serif;
   font-size: 20px;
-  font-style: lighter;
   color: #3d1900;
   margin: 5px 10px 0 5px;
   padding: 0 10px 0 5px;
@@ -77,14 +36,6 @@ textarea {
   font-family: "Neue Montreal", sans-serif;
   color: #3d1900;
   font-size: 16px;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .eksempler {
@@ -100,7 +51,7 @@ img {
   padding: 5px 5px 50px 5px;
   text-align: right;
   margin-top: 20px;
-  position: relative;
+  /* position: relative; */
   box-shadow: 10px -10px 0 #7a600e;
 }
 
@@ -117,7 +68,6 @@ img {
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
 .textfelt {
@@ -161,14 +111,6 @@ button {
   justify-content: flex-end;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 input {
   padding: 10px;
   margin: 3px 0px 3px 0px;
@@ -181,34 +123,12 @@ form {
 .input {
   margin: 10px 0px 10px 0px;
 }
-
-/* tablet view */
-@media only screen and (min-width: 700px) and (max-width: 1300px) {
-  main {
-    max-width: 670px;
-    margin: 0 auto;
-  }
-  /* .information {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
-  #kaffevogn {
-    grid-column: 1/2;
-    grid-row: 2;
-  } */
-  form {
-    grid-column: 2/3;
-    grid-row: 2;
-  }
+#kaffevogn {
+  background-image: url(/img/Kaffevogn.webp);
 }
 
 /* computersite */
 @media (min-width: 1300px) {
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
   h1 {
     font-family: "DM Serif Display", serif;
     font-style: italic;
@@ -221,12 +141,4 @@ form {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
-  /* #kaffevogn {
-    grid-column: 1/2;
-    grid-row: 2;
-  } */
-  /* form {
-    grid-column: 2/3;
-    grid-row: 2;
-  } */
 }

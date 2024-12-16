@@ -73,7 +73,7 @@ dd {
 
 /* footer */
 
-.footerindhold {
+/* .footerindhold {
   margin: 10px;
   padding: 10px;
   margin: 0 auto;
@@ -139,9 +139,9 @@ footer a {
 .info {
   display: flex;
   align-items: center;
-}
+} */
 /* computersite */
-@media (min-width: 801px) {
+/* @media (min-width: 801px) {
   .footerindhold {
     max-width: none;
     display: grid;
@@ -181,4 +181,5 @@ footer a {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-}
+} */
+/* footer slut */

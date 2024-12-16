@@ -1,7 +1,3 @@
-.h2_menukort {
-  text-align: right;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -43,7 +39,7 @@ dd {
 }
 
 /* tablet view */
-@media only screen and (min-width: 700px) and (max-width: 1300px) {
+/* @media only screen and (min-width: 700px) and (max-width: 1300px) {
   main {
     max-width: 670px;
     margin: 0 auto;
@@ -53,7 +49,7 @@ dd {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
 
 /* computersite */
 @media (min-width: 1300px) {
@@ -145,7 +141,7 @@ footer a {
   align-items: center;
 }
 /* computersite */
-@media (min-width: 700px) {
+@media (min-width: 801px) {
   .footerindhold {
     max-width: none;
     display: grid;
@@ -159,7 +155,7 @@ footer a {
     width: 40%;
     margin: 10px;
   }
-  footer ul {
+  s footer ul {
     display: inline-grid;
     grid-auto-flow: column;
     grid-gap: 24px;

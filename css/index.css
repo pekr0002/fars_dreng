@@ -60,14 +60,16 @@ p {
 /* HERO-SEKTION */
 
 .hero {
-  background-image: url(/img/mobile_virk_result.webp);
-  background-size: 100%;
-  height: 100vh;
+  background-image: url(/img/hero_section_pic.webp);
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #f4dec9;
+  background-size: cover;
 }
 
 .velkommen {
@@ -146,7 +148,6 @@ p {
 
   .hero {
     background-image: url(/img/desktop_virk_result.webp);
-    background-repeat: no-repeat;
   }
   .grid_1-1 {
     display: grid;

@@ -1,4 +1,9 @@
 /* general css? */
+
+.grid_1-1 img {
+  width: 100%;
+}
+
 body {
   background-color: #f4dec9;
 }
@@ -9,6 +14,8 @@ h1 {
   font-weight: lighter;
   font-size: 40px;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -18,6 +25,8 @@ h2 {
   font-size: 24px;
   text-transform: uppercase;
   color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -27,6 +36,18 @@ h3 {
   font-size: 20px;
   text-transform: uppercase;
   color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
 }
 
 dl {
@@ -46,11 +67,22 @@ main {
   margin-bottom: 10px;
 }
 
-.brown_box {
+.brown_box1 {
   background-color: #3d1900;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.brown_box2 {
+  background-color: #3d1900;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
 }
 
 .cyclig_cancer {
@@ -65,6 +97,77 @@ ul {
   list-style: none;
 }
 
+/* ----------------------------------- Header ----------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #a08d17;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  /* height: auto;
+  width: 30%; */
+  height: 158px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  font-family: "Neue Montreal", sans-serif;
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #f4dec9;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/* -----------------------------------Header slut----------------------------- */
+
 /* -----------------------------------Footer----------------------------- */
 .footerindhold {
   margin: 10px;
@@ -76,7 +179,7 @@ ul {
   grid-gap: 10px;
 }
 
-.logo_footer {
+.logo {
   margin: 10px;
   grid-column: 1/3;
   scale: 80%;
@@ -150,7 +253,6 @@ footer a {
 }
 
 /* computersite */
-
 @media (min-width: 800px) {
   main {
     max-width: 1200px;
@@ -160,6 +262,45 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .footerindhold {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 10px;
+  }
+  .logo {
+    height: auto;
+    width: 40%;
+    margin: 10px;
+  }
+  footer ul {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    scale: 100%;
+  }
+  .link {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 

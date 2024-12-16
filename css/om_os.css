@@ -8,7 +8,7 @@ body {
   background-color: #f4dec9;
 }
 
-h1 {
+/* h1 {
   font-family: "DM Serif Display", serif;
   font-style: italic;
   font-weight: lighter;
@@ -48,7 +48,7 @@ h4 {
   text-transform: uppercase;
   color: white;
   margin-bottom: 10px;
-}
+} */
 
 dl {
   font-size: 16px;
@@ -61,10 +61,12 @@ main {
 }
 
 .orange_box {
+  color: #fffcf3;
   background-color: #ff6c39;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 20px 0 20px 90px;
+  padding: 5px 5px 50px 5px;
+  text-align: right;
+  min-height: 120px;
 }
 
 .brown_box1 {

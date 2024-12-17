@@ -47,16 +47,6 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-family: "Neue Montreal", sans-serif;
-  color: #3d1900;
-  font-size: 20px;
-  text-align: right;
-  line-height: 150%;
-  margin: 0 10px 0 10px;
-  padding: 0 10px 0 10px;
-}
-
 .p_menu {
   color: #fffcf3;
   margin: 0;

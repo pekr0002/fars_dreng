@@ -1,22 +1,4 @@
-/* .grid_1-1 img {
-  width: 100%;
-} */
-
-body {
-  background-color: #f4dec9;
-}
-
-p {
-  font-family: "Neue Montreal", sans-serif;
-  color: #3d1900;
-  font-size: 20px;
-  text-align: right;
-  line-height: 150%;
-  margin: 0 10px 0 10px;
-  padding: 0 10px 0 10px;
-}
-
-.om_om_h3 {
+.orange_box h3 {
   font-family: "Neue Montreal", sans-serif;
   font-weight: 200;
   font-size: 32px;
@@ -55,50 +37,38 @@ p {
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
 }
-
-.cycling_cancer {
-  margin-top: 20px;
-  box-shadow: 10px -10px 0 #3d1900;
-  width: 100%;
-  height: auto;
+p {
+  text-align: left;
 }
 
-.legeheltene {
+.we_support img {
   margin-top: 20px;
   box-shadow: 10px -10px 0 #3d1900;
-  width: 100%;
-  height: auto;
 }
 
-dl {
-  font-size: 16px;
-  color: white;
+.sociale_medier {
+  display: flex;
 }
 
 ul {
   list-style: none;
 }
-.facebook {
-  align-items: end;
+
+.socials {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 40px;
+  justify-items: center;
+  margin: auto;
+  text-align: center;
 }
-.facebook img {
+
+.socials img {
   width: 60px;
   height: 60px;
   margin: 10px 10px;
-  padding: auto;
 }
 
-.instagram img {
-  width: 55.5px;
-  height: 55.5px;
-  margin: 10px 10px;
-  padding: auto;
-}
-
-.socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .socials a {
   color: black;
 }

@@ -4,12 +4,6 @@
   grid-template-columns: 1fr;
 }
 
-.divider {
-  border-top: 1px solid #a08d17;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
 /* litste elementer */
 .menupunkt {
   margin-top: 20px;

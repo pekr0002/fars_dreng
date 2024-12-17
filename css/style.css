@@ -17,12 +17,6 @@ html {
   --primary: #a08d17;
 }
 
-.divider {
-  border-top: 1px solid var(--primary);
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +26,7 @@ body {
 
 h1 {
   font-family: "The Rainmaker";
-  font-size: 10cqw;
+  font-size: 10cqw; /* giver fejl men det er okay*/
   font-weight: lighter;
   color: #fffcf3;
   position: absolute;
@@ -58,6 +52,22 @@ h3 {
   font-size: 32px;
   color: var(--primary);
 }
+
+p {
+  font-family: "Neue Montreal", sans-serif;
+  color: #3d1900;
+  font-size: 20px;
+  text-align: right;
+  line-height: 150%;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.divider {
+  border-top: 1px solid var(--primary);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
 /* NAV-BAR */
 
 header {
@@ -68,7 +78,7 @@ header {
   align-items: flex-start;
   justify-content: flex-end;
   padding: 5px;
-  background-color: #a08d17;
+  background-color: var(--primary);
 }
 
 .logo img {
@@ -180,6 +190,43 @@ nav {
 /* NAV BAR SLUT */
 
 /* FOOTER */
+footer {
+  background-color: var(--primary);
+  margin-top: 30px;
+  font-family: "Neue Montreal", sans-serif;
+  color: white;
+}
+
+footer img {
+  height: 130px;
+  width: 130px;
+}
+
+footer ul {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+}
+
+footer dt {
+  font-family: "Neue Montreal", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer a {
+  font-family: "Neue Montreal", sans-serif;
+  font-weight: bolder;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .footerindhold {
   margin: 10px;
   padding: 10px;
@@ -190,49 +237,15 @@ nav {
   grid-gap: 10px;
 }
 
-footer img {
-  height: 130px;
-  width: 130px;
-}
 .footer_logo {
   display: grid;
   grid-column: 1/3;
   justify-items: center;
 }
 
-footer {
-  background-color: #a08d17;
-  margin-top: 30px;
-  font-family: "Neue Montreal", sans-serif;
-  color: white;
-}
-footer ul {
-  display: inline-grid;
-  grid-auto-flow: column;
-  grid-gap: 24px;
-  justify-items: center;
-  margin: auto;
-}
 .link {
   grid-column: 1/3;
 }
-footer dt {
-  font-family: "Neue Montreal", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-footer a {
-  font-family: "Neue Montreal", sans-serif;
-  font-weight: bolder;
-  font-size: 13px;
-  color: #a08d17;
-  color: white;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-}
-
 .info link {
   padding: 1px;
   margin: 2px;
@@ -269,6 +282,7 @@ footer a {
     grid-gap: 24px;
     justify-items: center;
     margin: auto;
+    list-style: none;
   }
 
   a {

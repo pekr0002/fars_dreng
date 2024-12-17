@@ -263,7 +263,7 @@ footer a {
     width: 40%;
     margin: 10px;
   }
-  s footer ul {
+  footer ul {
     display: inline-grid;
     grid-auto-flow: column;
     grid-gap: 24px;
@@ -274,10 +274,6 @@ footer a {
   a {
     color: white;
     text-decoration: none;
-  }
-  .info {
-    display: flex;
-    align-items: center;
   }
 
   .footer_logo {

@@ -16,11 +16,13 @@
   margin-left: 10px;
 }
 
-ul {
+ul,
+dl {
   list-style: none;
 }
 
-dt {
+dt,
+li {
   font-size: 22px;
   font-family: "Neue Montreal", sans-serif;
 }

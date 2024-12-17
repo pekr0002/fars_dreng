@@ -32,9 +32,12 @@ body {
 
 h1 {
   font-family: "The Rainmaker";
-  font-size: 95px;
+  font-size: 10cqw;
   font-weight: lighter;
   color: #fffcf3;
+  position: absolute;
+  top: 32%;
+  left: 20%;
 }
 
 h2 {

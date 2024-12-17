@@ -24,10 +24,15 @@
 
 .groen_box {
   background-color: rgba(160, 141, 23, 0.75);
-  height: 250px;
   width: 100%;
-  text-align: center;
-  justify-items: center;
+  aspect-ratio: 4/1;
+  position: relative;
+  overflow: hidden;
+  /* padding-bottom: 322px; */
+}
+.lottie {
+  position: absolute;
+  top: -21%;
 }
 
 header {

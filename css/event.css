@@ -52,7 +52,7 @@ textarea {
   text-align: right;
   margin-top: 20px;
   /* position: relative; */
-  box-shadow: 10px -10px 0 #7a600e;
+  box-shadow: 10px -10px 0 var(--primary);
 }
 
 #box1 {
@@ -75,7 +75,7 @@ textarea {
   padding: 10px 10px 30px 5px;
   background-color: #fffcf3;
   border-width: 3px;
-  border-color: #7a600e;
+  border-color: var(--primary);
 }
 
 #email,
@@ -91,7 +91,7 @@ textarea {
 button {
   font-family: "Neue Montreal", sans-serif;
   background-color: #ff6c39;
-  padding: 10px;
+
   border: none;
   color: white;
   padding: 15px 32px;
@@ -99,11 +99,14 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
+  margin: 20px 2px 4px 2px;
   cursor: pointer;
-  margin-top: 20px;
-  position: relative;
-  box-shadow: 10px -10px 0 #7a600e;
+  box-shadow: 10px -10px 0 var(--primary);
+  transition: 0.3s;
+}
+button:hover {
+  background-color: var(--primary);
+  box-shadow: 10px -10px 0 #ff6c39;
 }
 
 .flex_end {

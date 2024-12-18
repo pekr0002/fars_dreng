@@ -12,7 +12,7 @@
   padding: 5px 5px 50px 5px;
   text-align: right;
   min-height: 120px;
-  box-shadow: 10px -10px 0 #7a600e;
+  box-shadow: 10px -10px 0 var(--primary);
 }
 
 .i_box {

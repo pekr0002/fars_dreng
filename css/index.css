@@ -13,6 +13,7 @@
   padding: 0px 5px 5px 5px;
 }
 
+/* bokse */
 .orange_box {
   color: #fffcf3;
   background-color: #ff6c39;
@@ -23,81 +24,17 @@
 }
 
 .groen_box {
-  background-color: rgba(160, 141, 23, 0.75);
+  background-color: var(--primary);
   width: 100%;
   aspect-ratio: 4/1;
   position: relative;
   overflow: hidden;
-  /* padding-bottom: 322px; */
-}
-.lottie {
-  position: absolute;
-  top: -21%;
-}
-
-.velkommen .divider {
-  border-top: 1px solid var(--primary);
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-header {
-  z-index: 2;
-}
-a {
-  text-decoration: none;
-}
-
-.p_menu {
-  color: #fffcf3;
-  margin: 0;
-}
-
-.forside_billede {
-  margin-top: 20px;
-  /* position: relative; */
-  box-shadow: 10px -10px 0 #3d1900;
-  width: 80%;
-  height: auto;
-}
-
-.pil {
-  height: 16px;
-  width: 127px;
-  display: initial;
-}
-/* HERO-SEKTION */
-
-.hero {
-  background-image: url(/img/hero_section_pic.webp);
-  aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #f4dec9;
-  background-size: cover;
-}
-
-.velkommen {
-  gap: 0;
-  margin: 0;
-  background-color: #f4dec9;
-}
-
-.gavekort {
-  gap: 0;
-  margin: 0px;
-  background-color: #a08d17;
-  padding: 10px 0 10px 0;
-  margin: 50px 0 0 0;
 }
 
 .green_box {
   color: #fffcf3;
   text-align: center;
-  background-color: #7a600e;
+  background-color: var(--primary);
   padding: 30px;
   margin: 80px 10px 80px 10px;
 }
@@ -136,6 +73,69 @@ a {
   margin: 0 0 0 90px;
   padding: 5px 5px 50px 5px;
   text-align: right;
+}
+
+.velkommen .divider {
+  border-top: 1px solid var(--primary);
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+header {
+  z-index: 2;
+}
+a {
+  text-decoration: none;
+}
+
+.p_menu {
+  color: #fffcf3;
+  margin: 0;
+}
+
+.forside_billede {
+  margin-top: 20px;
+  /* position: relative; */
+  box-shadow: 10px -10px 0 #3d1900;
+  width: 80%;
+  height: auto;
+}
+
+.pil {
+  height: 16px;
+  width: 127px;
+  display: initial;
+}
+/* HERO-SEKTION */
+.lottie {
+  position: absolute;
+  top: -21%;
+}
+
+.hero {
+  background-image: url(/img/hero_section_pic.webp);
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f4dec9;
+  background-size: cover;
+}
+
+.velkommen {
+  gap: 0;
+  margin: 0;
+  background-color: #f4dec9;
+}
+
+.gavekort {
+  gap: 0;
+  margin: 0px;
+  background-color: var(--primary);
+  padding: 10px 0 10px 0;
+  margin: 50px 0 0 0;
 }
 
 .facade {

@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
   --primary: #a08d17;
 }
+/* generel css */
 
 body {
   margin: 0;
@@ -208,6 +209,7 @@ footer ul {
   grid-gap: 24px;
   justify-items: center;
   margin: auto;
+  list-style: none;
 }
 
 footer dt {
@@ -282,7 +284,6 @@ footer a {
     grid-gap: 24px;
     justify-items: center;
     margin: auto;
-    list-style: none;
   }
 
   a {

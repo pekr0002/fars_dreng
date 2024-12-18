@@ -24,7 +24,7 @@
 }
 
 .groen_box {
-  background-color: var(--primary);
+  background-color: rgba(160, 141, 23, 0.7);
   width: 100%;
   aspect-ratio: 4/1;
   position: relative;
@@ -34,7 +34,7 @@
 .green_box {
   color: #fffcf3;
   text-align: center;
-  background-color: var(--primary);
+  background-color: #7a600e;
   padding: 30px;
   margin: 80px 10px 80px 10px;
 }
@@ -48,6 +48,10 @@
   text-wrap: nowrap;
   padding: 30px 50px;
   margin: 60px 10px 10px 10px;
+}
+
+dl {
+  padding: 0 5px;
 }
 
 .steder {
@@ -112,7 +116,7 @@ a {
 }
 
 .hero {
-  background-image: url(/img/hero_section_pic.webp);
+  background-image: url(/img/hero_section_pic_result.webp);
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;

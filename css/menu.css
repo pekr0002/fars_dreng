@@ -34,3 +34,7 @@ dd {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+main h3 {
+  padding-left: 5px;
+}

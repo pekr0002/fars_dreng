@@ -27,7 +27,7 @@ body {
 
 h1 {
   font-family: "The Rainmaker";
-  font-size: 10cqw; /* giver fejl men det er okay*/
+  font-size: 10cqw; /* giver fejl, men det er okay*/
   font-weight: lighter;
   color: #fffcf3;
   position: absolute;

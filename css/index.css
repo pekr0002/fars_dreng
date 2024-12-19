@@ -116,7 +116,7 @@ a {
 }
 
 .hero {
-  background-image: url(/img/hero_section_pic_result.webp);
+  background-image: url(../img/hero_section_pic_result.webp);
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
@@ -159,7 +159,7 @@ a {
   }
 
   .hero {
-    background-image: url(/img/hero_section_pic.webp);
+    background-image: url(../img/hero_section_pic.webp);
   }
   .grid_1-1 {
     display: grid;

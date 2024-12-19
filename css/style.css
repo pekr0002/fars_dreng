@@ -301,13 +301,13 @@ footer a {
 
 @font-face {
   font-family: "The Rainmaker";
-  src: url(/fonts/The\ Rainmaker.woff);
+  src: url(../fonts/The\ Rainmaker.woff);
   font-weight: 800;
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url(/fonts/ppneuemontreal-book.woff);
+  src: url(../fonts/ppneuemontreal-book.woff);
   font-style: normal;
   font-weight: normal;
 }

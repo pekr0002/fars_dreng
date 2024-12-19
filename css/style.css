@@ -253,12 +253,6 @@ footer a {
   margin: 2px;
 }
 
-#divider_footer {
-  border-top: 2px solid #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .info {
   display: flex;
   align-items: center;
